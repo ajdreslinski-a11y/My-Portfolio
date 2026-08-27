@@ -149,11 +149,21 @@ h1 span {
     color: white;
 }
 .right {
-   position: relative; 
+   position: relative;
+   height: 90vh;
+}
+
+.img-wrap {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .hero-img {
-    width: 110%;
+    width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
     position: absolute;
     bottom: 50px;
     right: 0;
