@@ -27,7 +27,8 @@ header {
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: rgba(43, 58, 85, 0.9)
+    color: rgba(43, 58, 85, 0.9);
+    text-decoration: none;
 }
 .header-logo span {
     font-size: 36px;
@@ -49,6 +50,7 @@ nav{
     transition: 0.3s;
     cursor: pointer;
     text-transform: capitalize;
+    text-decoration: none;
 }
 .nav-item:hover {
     color: rgb(133, 40, 255);
@@ -64,6 +66,10 @@ nav{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 .header-btn:hover {
     background-color: rgb(86, 12, 184);
@@ -119,7 +125,8 @@ h1 span {
     gap: 60px;
 }
 
-.cta-section button {
+.cta-section button,
+.cta-section a {
   font-size: 18x;
   font-weight: 600;
   letter-spacing: 1px;
@@ -132,7 +139,12 @@ h1 span {
   box-shadow: 0 10px 10px rgba(43, 58, 85, 0.2);
   animation: bottomIn 1.4s ease-in-out forwards;
   opacity: 0;
-  animation-delay: 0.5s; 
+  animation-delay: 0.5s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
 }
 .cta-1 {
     background-color: rgba(43, 58, 85, 0.9);
@@ -144,7 +156,8 @@ h1 span {
     border: 2px solid rgb(133, 40, 255);
 }
 
-.cta-section button:hover {
+.cta-section button:hover,
+.cta-section a:hover {
     background-color: rgb(133, 40, 255);
     color: white;
 }
@@ -177,6 +190,10 @@ h1 span {
     align-items: center;
     gap: 50px;
     margin-top: 50px;
+}
+.social-section a {
+    text-decoration: none;
+    color: inherit;
 }
 .social-section i {
     font-size: 18px;
